@@ -22,7 +22,7 @@ function transformStateWithClones(state, actions) {
         newObj = clear(newObj);
         break;
     }
-    result.push(newObj);
+    result.push({ ...newObj });
   }
 
   return result;
